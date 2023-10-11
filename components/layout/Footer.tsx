@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { enamad } from "@/assets/general";
+import { enamad } from "@/public/assets/general";
 import Image from "next/image";
 import { footerNavList } from "@/constants/footer";
 

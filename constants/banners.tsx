@@ -10,7 +10,7 @@ import {
   bostonStrangler,
   theLastKingdoSevenKingsMustDie,
   tetris,
-} from "../assets/banners/banner-group-2";
+} from "../public/assets/banners/banner-group-2";
 
 export const bannerGroup2 = [
   {
@@ -67,7 +67,7 @@ import {
   banner5,
   banner6,
   banner7,
-} from "../assets/banners/banner-group-1";
+} from "../public/assets/banners/banner-group-1";
 
 export const bannerGroup1 = [
   {
@@ -114,17 +114,6 @@ export const bannerGroup1 = [
   },
 ];
 
-import Nadimeh from "../assets/banners/banner-group-3/سرگذشت ندیمه میانی.jpg";
-
-export const bannerGroup3 = [
-  {
-    movietitle: "سرگذشت ندیمه میانی",
-    moviePoster: Nadimeh,
-    movieId: 1,
-    isSeries: true,
-    tmdbId: "69478",
-  },
-];
 import {
   kingsOfPain,
   JohnWickChapter4,
@@ -133,7 +122,7 @@ import {
   TheNightAgent,
   YourHonor,
   Killing,
-} from "../assets/banners/banner-group-4";
+} from "../public/assets/banners/banner-group-4";
 
 export const bannerGroup4 = [
   {
@@ -185,113 +174,8 @@ export const bannerGroup4 = [
     tmdbId: "34415",
   },
 ];
-import BetterCallSaul from "../assets/banners/banner-group-5/بهتره با ساول تماس بگیرید میانی.jpg";
 
-export const bannerGroup5 = [
-  {
-    movietitle: "بهتره با ساول تماس بگیری",
-    moviePoster: BetterCallSaul,
-    movieId: 1,
-    isSeries: true,
-    tmdbId: "60059",
-  },
-];
-
-import {
-  TedLasso,
-  Dark,
-  BreakingBad,
-  ThelordOfTheRings,
-  AlchemyOfSouls,
-} from "../assets/banners/banner-group-6";
-export const bannerGroup6 = [
-  {
-    movietitle: "تد لاسو",
-    moviePoster: TedLasso,
-    movieId: 1,
-    isSeries: true,
-    tmdbId: "97546",
-  },
-  {
-    movietitle: "تاریک",
-    moviePoster: Dark,
-    movieId: 2,
-    isSeries: true,
-    tmdbId: "70523",
-  },
-  {
-    movietitle: "برکینگ بد",
-    moviePoster: BreakingBad,
-    movieId: 3,
-    isSeries: true,
-    tmdbId: "1396",
-  },
-  {
-    movietitle: "سریال ارباب حلقه ها حلقه های قدرت",
-    moviePoster: ThelordOfTheRings,
-    movieId: 4,
-    isSeries: true,
-    tmdbId: "84773",
-  },
-  {
-    movietitle: "مامور شب",
-    moviePoster: TheNightAgent,
-    movieId: 5,
-    isSeries: true,
-    tmdbId: "129552",
-  },
-  {
-    movietitle: "جناب قاضی",
-    moviePoster: YourHonor,
-    movieId: 6,
-    isSeries: true,
-    tmdbId: "86430",
-  },
-  {
-    movietitle: "کیمیای روح",
-    moviePoster: AlchemyOfSouls,
-    movieId: 7,
-    isSeries: true,
-    tmdbId: "135157",
-  },
-];
-import {
-  MyDadTheBountyHunter,
-  SpyXFamily,
-  TheLegendOfVoxMachina,
-  AttackOnTitan,
-} from "../assets/banners/banner-group-7";
-export const bannerGroup7 = [
-  {
-    movietitle: "پدرم شکارچی جایزه بگیر.",
-    moviePoster: MyDadTheBountyHunter,
-    movieId: 1,
-    isSeries: true,
-    tmdbId: "157221",
-  },
-  {
-    movietitle: "جاسوس × خانواده",
-    moviePoster: SpyXFamily,
-    movieId: 2,
-    isSeries: true,
-    tmdbId: "120089",
-  },
-  {
-    movietitle: "افسانه واکس مکینا",
-    moviePoster: TheLegendOfVoxMachina,
-    movieId: 3,
-    isSeries: true,
-    tmdbId: "135934",
-  },
-  {
-    movietitle: "حمله به تایتان",
-    moviePoster: AttackOnTitan,
-    movieId: 4,
-    isSeries: true,
-    tmdbId: "1429",
-  },
-];
-import breakingBad from "../assets/banners/banner-group-8/BreakingBad.jpg";
+import breakingBad from "../public/assets/banners/banner-group-8/BreakingBad.jpg";
 export const bannerGroup8 = [
   {
     movietitle: "برکینگ بد",

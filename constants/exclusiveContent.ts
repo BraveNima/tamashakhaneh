@@ -7,7 +7,7 @@ import {
   exclusiveseven,
   exclusivetimeToBed,
   exclusivezed,
-} from "../assets/exclusiveBanner";
+} from "../public/assets/exclusiveBanner";
 export const ExclusiveInfo = [
   {
     index: 1,

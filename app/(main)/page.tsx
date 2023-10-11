@@ -1,10 +1,10 @@
+import { HomeslidersDate } from "@/constants/Slider";
 // import components
 import {
   MoviesCategory,
   Sliders,
   TheBroadcasts,
   Banners,
-  Exclusive,
   MiniBanners,
   Exclusives,
 } from "@/components";
@@ -12,27 +12,20 @@ import {
 import {
   bannerGroup2,
   bannerGroup1,
-  bannerGroup3,
   bannerGroup4,
-  bannerGroup5,
-  bannerGroup6,
-  bannerGroup7,
   bannerGroup8,
 } from "@/constants/banners";
 
 import {
   miniBanners1,
   persianActors,
-  goldens,
   collections,
 } from "@/constants/miniBanners";
-import { HomeslidersDate } from "@/constants/Slider";
 
 const HomePage = () => {
   return (
     <main className="relative  flex flex-col opacity-100">
       <Sliders slidersDate={HomeslidersDate} />
-
       <MoviesCategory
         apiPath={"/3/trending/movie/day?language=fa"}
         movieCategoryTitle={"ترند"}

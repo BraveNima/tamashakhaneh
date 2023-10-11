@@ -2,8 +2,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { pakhsh } from "@/assets/general";
-import { ExclamationMark } from "@/assets/general";
+import { pakhsh } from "@/public/assets/general";
+import { ExclamationMark } from "@/public/assets/general";
 
 const Slidermovie = ({
   banner,

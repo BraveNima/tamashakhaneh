@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { miniLogo } from "@/assets/logos";
+import { miniLogo } from "@/public/assets/logos";
 
 interface movieCategoryProps {
   movieCatTitle: string;

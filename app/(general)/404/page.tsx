@@ -1,5 +1,5 @@
 import Image from "next/image";
-import error404 from "../../../assets/error/error.png";
+import error404 from "../../../public/assets/error/error.png";
 
 const errorPage = () => {
   return (

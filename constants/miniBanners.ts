@@ -14,14 +14,14 @@ import {
   onePiece,
   hari,
   boogeyman,
-} from "../assets/miniBanners/index";
+} from "../public/assets/miniBanners/index";
 
 import {
   collection1,
   collection2,
   collection3,
   collection4,
-} from "../assets/miniBanners/collection";
+} from "../public/assets/miniBanners/collection";
 
 import {
   navid,
@@ -30,7 +30,7 @@ import {
   bahram,
   shahab,
   tanaz,
-} from "../assets/actors/persianActors";
+} from "../public/assets/actors/persianActors";
 
 export const miniBanners1 = [
   {
@@ -136,36 +136,6 @@ export const miniBanners1 = [
     alt: "هاری",
     id: 15,
     tmdbId: 535175,
-  },
-];
-
-import {
-  MartinScorsese,
-  StevenAllanSpielberg,
-  ChristopherEdwardNolan,
-  AlfredJosephHitchcock,
-} from "../assets/actors/goldens";
-
-export const goldens = [
-  {
-    title: "مارتین اسکورسیزی کارگردان",
-    poster: MartinScorsese,
-    id: 1,
-  },
-  {
-    title: "استیون اسپیلبرگ کارگردان.",
-    poster: StevenAllanSpielberg,
-    id: 2,
-  },
-  {
-    title: "کریستوفر نولان کارگردان.",
-    poster: ChristopherEdwardNolan,
-    id: 3,
-  },
-  {
-    title: "آلفرد هیچکاک کارگردان.",
-    poster: AlfredJosephHitchcock,
-    id: 4,
   },
 ];
 

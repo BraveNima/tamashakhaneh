@@ -5,9 +5,9 @@ import {
   winterKing,
   justified,
   pedarGoardula,
-} from "@/assets/broadcast";
+} from "../public/assets/broadcast";
 
-import { Sat, Sun, Mon, seshanbeh, Wed, Thu } from "../assets/weekdays";
+import { Sat, Sun, Mon, seshanbeh, Wed, Thu } from "../public/assets/weekdays";
 export const broadcastInfo = [
   {
     broadcastDay: Sat,

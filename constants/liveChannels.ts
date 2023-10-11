@@ -1,4 +1,4 @@
-import { tvVarzesh, tvArio, tvArio2, tv3 } from "../assets/LiveChannels";
+import { tvVarzesh, tvArio, tvArio2, tv3 } from "../public/assets/LiveChannels";
 
 export const LiveChannels = [
   { id: 1, title: "شبکه ورزش", logo: tvVarzesh },

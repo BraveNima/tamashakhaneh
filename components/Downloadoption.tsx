@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { download } from "@/assets/general";
-import { googlePlay, myket } from "@/assets/apps";
+import { download } from "@/public/assets/general";
+import { googlePlay, myket } from "@/public/assets/apps";
 
 type DownloadoptionProps = {
   title: string;

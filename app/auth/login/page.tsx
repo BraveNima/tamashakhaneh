@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { loginImg } from "@/assets/general";
+import { loginImg } from "@/public/assets/general";
 import Link from "next/link";
 
 const loginPage = () => {

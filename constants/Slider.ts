@@ -9,7 +9,7 @@ import {
   banner8,
   banner9,
   banner10,
-} from "../assets/homeSliders";
+} from "../public/assets/homeSliders";
 import {
   mobileBanner1,
   mobileBanner2,
@@ -21,7 +21,7 @@ import {
   mobileBanner8,
   mobileBanner9,
   mobileBanner10,
-} from "../assets/homeSliders/mobile";
+} from "../public/assets/homeSliders/mobile";
 import {
   logoType1,
   logoType2,
@@ -33,7 +33,7 @@ import {
   logoType8,
   logoType9,
   logoType10,
-} from "../assets/homeSliders/miniBanners";
+} from "../public/assets/homeSliders/miniBanners";
 export const HomeslidersDate = [
   {
     persianTitle: "سگ های نگهبان : فیلم بزرگ",
