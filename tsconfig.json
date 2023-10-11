@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/theBroadcasts/BroadcastMobile.tsx",
+    "components/exclusiveContent/ExclusiveItem.tsx",
+    "components/exclusiveContent/Exclusives.tsx",
+    "components/miniBanners/MiniBanners.jsx",
+    "components/movieCategory/MovieItems.jsx",
+    "components/movieCategory/TrendMovie.jsx",
+    "components/movieCategory/MoviesCategory.jsx",
+    "components/homeSlider/Sliders.jsx",
+    "components/homeSlider/Slider.jsx",
+    "app/error.js",
+    "components/layout/MobileMenu.tsx",
+    "app/(main)/search/page.jsx",
+    "components/Movie.jsx",
+    "components/homeSlider/Slidermovies.jsx",
+    "app/(main)/about/agreement/page.jsxnents/QuestionBox.jsx",
+    "components/banners/Banners.jsx",
+    "components/banners/Banner.jsx",
+    "components/general/QuestionBox.tsx"
+, "components/ShowDetails.jsx"  ],
+  "exclude": ["node_modules"]
+}
