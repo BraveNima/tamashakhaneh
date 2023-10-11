@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 const TrendMovie = ({ release_date, title, img, id, isSeries }) => {
-  
   const myImg = `https://image.tmdb.org/t/p/original/${img}`;
   return (
     <section className="relative mb-2.5">
       <Link
+        prefetch={false}
         href={`${!isSeries ? `/movies/${id}` : `/series/${id}`}`}
         className="relative top-0 cursor-pointer bg-transparent"
       >

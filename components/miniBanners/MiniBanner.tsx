@@ -16,6 +16,7 @@ const MiniBanner = ({
 }: MiniBannerprops) => {
   return (
     <Link
+      prefetch={false}
       href={`${!isSeries ? `/movies/${tmdbId}` : `/series/${tmdbId}`}`}
       className="relative block cursor-pointer"
     >
