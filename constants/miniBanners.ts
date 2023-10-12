@@ -141,32 +141,32 @@ export const miniBanners1 = [
 
 export const persianActors = [
   {
-    title: "نوید محمد زاده",
+    alt: "نوید محمد زاده",
     poster: navid,
     id: 1,
   },
   {
-    title: "لیلا حاتمی",
+    alt: "لیلا حاتمی",
     poster: leila,
     id: 2,
   },
   {
-    title: "امین حیایی",
+    alt: "امین حیایی",
     poster: amin,
     id: 3,
   },
   {
-    title: "بهرام رادان",
+    alt: "بهرام رادان",
     poster: bahram,
     id: 4,
   },
   {
-    title: "شهاب حسینی",
+    alt: "شهاب حسینی",
     poster: shahab,
     id: 5,
   },
   {
-    title: "طناز طباطباعی",
+    alt: "طناز طباطباعی",
     poster: tanaz,
     id: 6,
   },
@@ -174,27 +174,26 @@ export const persianActors = [
 
 export const collections = [
   {
-    title: "ارباب حلقه‌ها مجموعه فیلم",
+    alt: "ارباب حلقه‌ها مجموعه فیلم",
     poster: collection1,
     id: 1,
     tmdbId: "122",
   },
   {
-    title: "دزدان دریایی کارائیب مجموعه فیلم",
+    alt: "دزدان دریایی کارائیب مجموعه فیلم",
     poster: collection2,
     id: 2,
 
     tmdbId: "1865",
   },
   {
-    title: "جانوران شگفت‌انگیز مجموعه فیلم",
+    alt: "جانوران شگفت‌انگیز مجموعه فیلم",
     poster: collection3,
     id: 3,
-
     tmdbId: "338953",
   },
   {
-    title: "هری پاتر مجموعه فیلم",
+    alt: "هری پاتر مجموعه فیلم",
     poster: collection4,
     id: 4,
     tmdbId: "671",

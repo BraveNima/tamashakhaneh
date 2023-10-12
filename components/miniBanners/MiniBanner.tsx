@@ -16,7 +16,6 @@ const MiniBanner = ({
 }: MiniBannerprops) => {
   return (
     <Link
-    
       href={`${!isSeries ? `/movies/${tmdbId}` : `/series/${tmdbId}`}`}
       className="relative block cursor-pointer"
     >

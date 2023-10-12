@@ -47,9 +47,9 @@ const Slider = ({
             className="z-10 mb-[-40px] block h-[168px] w-[168px] drop-shadow-sm xs:w-[25rem] md:h-[252px] md:w-[252px] xl:mb-[-50px] xl:mt-[-50px] "
           />
           <div className="flex">
-            <h5 className="ml-2.5 block select-text text-[1.3rem] font-normal text-white md:text-2xl md:font-bold">
+            <h1 className="ml-2.5 block select-text text-[1.3rem] font-normal text-white md:text-2xl md:font-bold">
               {persianTitle}
-            </h5>
+            </h1>
           </div>
           <h1 className="z-10 mb-5 mt-3 block select-text text-[1.3rem] font-thin text-white xs:text-lg">
             {englishTitle}
