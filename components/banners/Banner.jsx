@@ -5,7 +5,7 @@ import React from "react";
 const Banner = ({ bannerImage, bannerAlt, tmdbId, isSeries }) => {
   return (
     <Link
-      prefetch={false}
+   
       href={`${!isSeries ? `/movies/${tmdbId}` : `/series/${tmdbId}`}`}
       className="relative block cursor-pointer"
     >

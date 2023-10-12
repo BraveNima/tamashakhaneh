@@ -26,7 +26,6 @@ const Slider = ({
 
   return (
     <Link
-      prefetch={false}
       href={`/movies/${tmdbId}`}
       className=" relative block cursor-pointer text-[unset]"
     >
