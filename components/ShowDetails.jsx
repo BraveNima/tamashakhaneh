@@ -63,7 +63,7 @@ const ShowDetails = ({
                   {genres.map((genre) => (
                     <Link
                       key={genre.id}
-                      href={""}
+                      href="#"
                       className="mr-1 text-xs visited:text-[unset] lg:text-sm"
                     >
                       {genre.name}
@@ -73,7 +73,7 @@ const ShowDetails = ({
               </div>
               <div className="bottom-0 ml-2.5 flex h-[25px] w-max items-center justify-center rounded-[4px] bg-[#ffffff29] px-2.5 py-[5px] text-center align-middle text-sm font-thin text-white xl:right-8 xxl:block xxl:text-base">
                 <Link
-                  href={""}
+                  href="#"
                   className=" flex items-center justify-center text-xs visited:text-[unset] lg:text-sm "
                 >
                   {release.slice(0, 4)}
@@ -83,7 +83,7 @@ const ShowDetails = ({
                 {madeIn.map((item) => (
                   <Link
                     key={item.name}
-                    href={""}
+                    href="#"
                     className=" flex items-center justify-center text-xs visited:text-[unset] lg:text-sm "
                   >
                     {item.name}
