@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MouseEventHandler, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 
 type ExclusiveItemProps = {
   index: number;

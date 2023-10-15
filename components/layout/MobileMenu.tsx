@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { GiHamburgerMenu, GiHomeGarage } from "react-icons/gi";
 import { NavMobilelist } from "@/constants/header";
 
@@ -34,7 +34,7 @@ const MobileMenu = () => {
       </div>
       <button
         onClick={() => setToggleMenu((toggle) => !toggle)}
-        className="relative mx-[7px] pl-5 px-1.5 mdl:hidden"
+        className="relative mx-[7px] px-1.5 pl-5 mdl:hidden"
       >
         <GiHamburgerMenu className="h-8 w-8 fill-white text-base opacity-90" />
       </button>

@@ -57,6 +57,7 @@ html {
     );
     @apply absolute z-20 mt-0 flex min-h-[70px] w-full items-center justify-between rounded-b-2xl pl-4 md:rounded-b-[2.25rem] mdl:px-9;
   }
+
   #app {
     @apply min-h-full min-w-full bg-primary;
   }

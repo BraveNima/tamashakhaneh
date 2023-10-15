@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BiCaretDown } from "react-icons/bi";
 

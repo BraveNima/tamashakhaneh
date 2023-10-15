@@ -2,22 +2,13 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-
 import Slider from "./Slider";
-
 //styles
 import "swiper/css";
 import "swiper/css/navigation";
+import { Key } from "react";
 
-// const slidersDateProps = {
-//   persianTitle: string,
-//   englishTitle: string,
-//   banner: string,
-//   descr: string,
-//   id: number,
-// };
-
-export default function Sliders({ slidersDate }) {
+export default function Sliders({ slidersDate }: any) {
   return (
     <article>
       <div className="">
@@ -33,10 +24,10 @@ export default function Sliders({ slidersDate }) {
                   prevEl: ".swiper-btn-prev",
                   nextEl: ".swiper-btn-next",
                 }}
-                // autoplay={{
-                //   delay: 7000,
-                //   disableOnInteraction: false,
-                // }}
+                autoplay={{
+                  delay: 7000,
+                  disableOnInteraction: false,
+                }}
                 pagination={{
                   clickable: true,
                 }}
@@ -45,19 +36,30 @@ export default function Sliders({ slidersDate }) {
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"
               >
-                {slidersDate.map((item) => (
-                  <SwiperSlide key={item?.id}>
-                    <Slider
-                      banner={item?.banner}
-                      mobileBanner={item?.mobileBanner}
-                      englishTitle={item?.englishTitle}
-                      persianTitle={item?.persianTitle}
-                      descr={item?.descr}
-                      miniBanner={item?.miniBanner}
-                      tmdbId={item?.tmdbId}
-                    />
-                  </SwiperSlide>
-                ))}
+                {slidersDate.map(
+                  (item: {
+                    id: Key | null | undefined;
+                    banner: any;
+                    mobileBanner: any;
+                    englishTitle: any;
+                    persianTitle: any;
+                    descr: any;
+                    miniBanner: any;
+                    tmdbId: any;
+                  }) => (
+                    <SwiperSlide key={item?.id}>
+                      <Slider
+                        banner={item?.banner}
+                        mobileBanner={item?.mobileBanner}
+                        englishTitle={item?.englishTitle}
+                        persianTitle={item?.persianTitle}
+                        descr={item?.descr}
+                        miniBanner={item?.miniBanner}
+                        tmdbId={item?.tmdbId}
+                      />
+                    </SwiperSlide>
+                  ),
+                )}
               </Swiper>
             </div>
           </section>

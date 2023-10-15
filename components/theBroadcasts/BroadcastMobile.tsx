@@ -1,6 +1,5 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import React, { Dispatch, SetStateAction } from "react";
 
 type BroadcastProps = {
   broadcastDay: StaticImageData;

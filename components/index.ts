@@ -35,9 +35,9 @@ import Exclusive from "./exclusiveContent/Exclusive";
 import MobileMenu from "./layout/MobileMenu";
 
 import SearchHeader from "./SearchHeader";
-import FilterSearch from "./FilterSearch";
-import Movie from "./Movie";
-import Downloadoption from "./Downloadoption";
+import FilterSearch from "./general/FilterSearch";
+import Movie from "./movieCategory/Movie";
+import Downloadoption from "./general/Downloadoption";
 
 import PrivacyQuestion from "./general/PrivacyQuestion";
 import QuestionBox from "./general/QuestionBox";

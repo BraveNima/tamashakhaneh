@@ -1,5 +1,3 @@
-import React from "react";
-
 type PrivacyQuestionProps = {
   questionTitle: string;
   questionAnswer: string;

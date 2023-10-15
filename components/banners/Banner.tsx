@@ -1,11 +1,16 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import React from "react";
 
-const Banner = ({ bannerImage, bannerAlt, tmdbId, isSeries }) => {
+type bannerProps = {
+  bannerImage: StaticImageData;
+  bannerAlt: string;
+  tmdbId: number;
+  isSeries: boolean;
+};
+
+const Banner = ({ bannerImage, bannerAlt, tmdbId, isSeries }: bannerProps) => {
   return (
     <Link
-   
       href={`${!isSeries ? `/movies/${tmdbId}` : `/series/${tmdbId}`}`}
       className="relative block cursor-pointer"
     >

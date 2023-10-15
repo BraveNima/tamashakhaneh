@@ -1,6 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import React, { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 type BroadcastProps = {
   broadcastTitle: string;
@@ -27,7 +27,10 @@ const Broadcast = ({
   }
   return (
     <div
-      style={{ backgroundImage: `url(${broadcastDay.src})`, backgroundPosition:"left center" }}
+      style={{
+        backgroundImage: `url(${broadcastDay.src})`,
+        backgroundPosition: "left center",
+      }}
       onClick={handleToggleBroadcast}
       className={`relative mr-[15px] hidden h-max  min-h-[13vw] w-[12%] cursor-pointer rounded-[10px] bg-cover bg-no-repeat text-[#3d3d3d] transition-all first:mr-0 mdl:block  ${
         curItem === index ? "flex w-[60%] flex-row-reverse" : ""

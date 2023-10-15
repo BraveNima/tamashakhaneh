@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 import { BiCaretDown, BiCaretUp } from "react-icons/bi";
 
