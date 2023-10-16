@@ -1,6 +1,14 @@
 import Link from "next/link";
 
-const Movie = ({ title, release_date, img, isSeries, id }) => {
+type movieProps = {
+  title: string;
+  release_date: string;
+  img: string;
+  isSeries: boolean;
+  id: number;
+};
+
+const Movie = ({ title, release_date, img, isSeries, id }:movieProps) => {
   const myImg = `https://image.tmdb.org/t/p/original/${img}`;
 
   if (img === null) {
