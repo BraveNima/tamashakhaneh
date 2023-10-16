@@ -28,9 +28,8 @@ const Slider = ({
 }: sliderProps) => {
   return (
     <Link
-      // href={`/movies/${tmdbId}`}
-      href={"#"}
-      className=" relative block cursor-pointer text-[unset]"
+      href={`/movies/${tmdbId}`}
+      className="relative block cursor-pointer text-[unset]"
     >
       <div
         style={{
