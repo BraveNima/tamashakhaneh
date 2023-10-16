@@ -1,11 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import { pakhsh } from "@/public/assets/general";
 import { ExclamationMark } from "@/public/assets/general";
-
-console.log(innerWidth);
 
 type sliderProps = {
   banner: any;
