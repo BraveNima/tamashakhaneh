@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import "../styles/globals.css";
 import { Vazirmatn } from "next/font/google";
 import { Metadata } from "next";
@@ -14,10 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="rtl">
-      <body className={vazir.className} id="app">
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" dir="rtl">
+        <body className={vazir.className} id="app">
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

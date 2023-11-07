@@ -21,7 +21,7 @@ const Header = ({ leftNav = true }: { leftNav: boolean }) => {
             </Link>
           </div>
           <Link
-            href={"/auth/sign-in"}
+            href={"/sign-up"}
             className="btn-primary 
             inline-block cursor-pointer py-1.5"
           >

@@ -21,6 +21,7 @@ import {
   persianActors,
   collections,
 } from "@/constants/miniBanners";
+import { UserButton } from "@clerk/nextjs";
 
 const HomePage = () => {
   return (
@@ -84,6 +85,7 @@ const HomePage = () => {
         apiPath={"/3/tv/top_rated?language=fa&page=1"}
         movieCategoryTitle={"همه سریال‌ها"}
       />
+      <UserButton />
     </main>
   );
 };
