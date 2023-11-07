@@ -21,7 +21,14 @@ const TheBroadcasts = () => {
           isMargintop={false}
         />
         <div className="px-9">
-          <Swiper slidesPerView={1} navigation={true} modules={[Navigation]}>
+          <Swiper
+            slidesPerView={1}
+            navigation={{
+              prevEl: ".broadcast-btn-prev",
+              nextEl: ".broadcast-btn-next",
+            }}
+            modules={[Navigation]}
+          >
             {broadcastInfo.map((item) => (
               <SwiperSlide key={item.index}>
                 <BroadcastMobile
@@ -34,6 +41,8 @@ const TheBroadcasts = () => {
                 />
               </SwiperSlide>
             ))}
+            <div className="broadcast-btn-prev"></div>
+            <div className="broadcast-btn-next"></div>
           </Swiper>
         </div>
 

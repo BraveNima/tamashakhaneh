@@ -14,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="rtl" className={vazir.className}>
-      <body id="app">{children}</body>
+    <html lang="en" dir="rtl">
+      <body className={vazir.className} id="app">
+        {children}
+      </body>
     </html>
   );
 }

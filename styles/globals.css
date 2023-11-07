@@ -48,6 +48,11 @@ html {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
 @layer base {
   .header {
     background: linear-gradient(
@@ -131,16 +136,35 @@ html body section .swiper-btn-next {
   height: 2rem;
   margin: 10px;
 }
+html body section .swiper-button-prev,
+html body section .swiper-button-next {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+  border-radius: 25px;
+  z-index: 9999;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  padding: 10px;
+}
 body .swiper-btn-prev {
   background-image: url("../public/assets/general/Greater-than\ sign.svg");
+}
+body .swiper-button-prev {
+  background-image: url("../public/assets/general/Greater-than\ sign.svg");
+  right: 25px;
 }
 
 body .swiper-btn-next {
   background-image: url("../public/assets/general/Less-than\ sign.svg");
 }
-
-/*  */
 body .swiper-button-next {
+  background-image: url("../public/assets/general/Less-than\ sign.svg");
+  left: 25px;
+}
+
+body .swiper-broadcast-next {
   background-image: url("../public/assets/general/Less-than\ sign.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -156,12 +180,12 @@ body .swiper-button-next {
 }
 
 @media (min-width: 600px) {
-  html body .swiper-button-next,
-  html body .swiper-button-prev {
+  html body .broadcast-button-next,
+  html body .broadcast-button-prev {
     top: 35%;
   }
 }
-body .swiper-button-prev {
+body .broadcast-button-prev {
   background-image: url("../public//assets//general/Greater-than\ sign.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -176,6 +200,10 @@ body .swiper-button-prev {
   top: 25%;
 }
 
+body .broadcast-button-prev::after,
+body .broadcast-button-next::after {
+  content: "" !important;
+}
 body .swiper-button-prev::after,
 body .swiper-button-next::after {
   content: "" !important;

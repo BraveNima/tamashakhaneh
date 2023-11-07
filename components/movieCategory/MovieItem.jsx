@@ -8,12 +8,11 @@ const TrendMovie = ({ release_date, title, img, id, isSeries }) => {
   return (
     <section className="relative mb-2.5">
       <Link
-       
         href={`${!isSeries ? `/movies/${id}` : `/series/${id}`}`}
         className="relative top-0 cursor-pointer bg-transparent"
       >
         <div className="relative w-fit overflow-hidden rounded-[10px]">
-          <img height={250} className="" src={myImg} alt={title} />
+          <img className="h-[231px]" src={myImg} alt={title} />
           <div className="movie-bg relative bottom-[5px] z-10 -mt-[30px] h-[100px] w-full rounded-b-[10px] px-2.5 text-white">
             <h4 className="absolute bottom-[30px] m-0 text-[1.1rem] font-normal leading-[15px] text-[#f9c000]">
               {title}

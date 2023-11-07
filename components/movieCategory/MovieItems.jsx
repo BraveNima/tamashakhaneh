@@ -1,7 +1,7 @@
 "use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MovieItem } from "..";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -29,21 +29,24 @@ const TrendMoviesList = ({ results }) => {
           slidesPerView: 8,
         },
       }}
+      modules={[Navigation]}
       dir="rtl"
       navigation={false}
       grabCursor={true}
       className="mySwiper !px-5"
     >
       {results.map((item) => (
-        <SwiperSlide key={item.id}>
-          <MovieItem
-            title={item?.title || item?.name}
-            release_date={item?.release_date || item?.first_air_date}
-            img={item?.poster_path || item?.backdrop_path}
-            id={item?.id}
-            isSeries={item?.first_air_date !== undefined ? true : false}
-          />
-        </SwiperSlide>
+        <>
+          <SwiperSlide key={item.id}>
+            <MovieItem
+              title={item?.title || item?.name}
+              release_date={item?.release_date || item?.first_air_date}
+              img={item?.poster_path || item?.backdrop_path}
+              id={item?.id}
+              isSeries={item?.first_air_date !== undefined ? true : false}
+            />
+          </SwiperSlide>
+        </>
       ))}
     </Swiper>
   );
