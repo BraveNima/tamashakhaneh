@@ -1,4 +1,5 @@
 //nav data for desktop
+//navbar
 
 export const Navlist = [
   {
