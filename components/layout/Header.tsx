@@ -1,16 +1,11 @@
 import Link from "next/link";
-/**
- * Imports Logo, Navbar and MobileMenu components from the current directory.
- */
 import { Logo, Navbar, MobileMenu } from ".";
 
-//react icons
+// react icons
 import { LiaSearchSolid } from "react-icons/lia";
 import { HiDownload } from "react-icons/hi";
 import { SignedOut, SignedIn, UserButton } from "@clerk/nextjs";
-import { LuAlertCircle } from "react-icons/lu";
-import { SignIn } from "@clerk/clerk-react";
-import { BiSolidBellRing, BiSolidUser } from "react-icons/bi";
+import { BiSolidBellRing } from "react-icons/bi";
 
 const Header = ({ leftNav = true }: { leftNav: boolean }) => {
   return (
@@ -45,7 +40,7 @@ const Header = ({ leftNav = true }: { leftNav: boolean }) => {
           </div>
           <Link
             href={"/apps"}
-            className="btn-primary mr-[5px] flex items-center gap-1 px-[5px] py-[5px] md:mr-2.5 md:px-2.5"
+            className="btn-primary mr-[5px] flex items-center gap-1 p-[5px] md:mr-2.5 md:px-2.5"
           >
             <span className="hidden mdl:inline">اپلیکیشن</span>
             <HiDownload className="h-[15px] w-[15px] overflow-hidden mdl:h-[18px] mdl:w-[18px]" />

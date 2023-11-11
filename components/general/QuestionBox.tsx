@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
-
 import { BiCaretDown, BiCaretUp } from "react-icons/bi";
 
 type QuestionBoxProps = {
@@ -34,7 +33,7 @@ const QuestionBox = ({
         href="#"
         className={` ${
           selected === index ? " bg-[#f90000]" : " bg-[#2A2A2A]"
-        } transition-al relative z-10 my-[5px] flex h-10 w-full items-center justify-between overflow-hidden rounded-[10px] px-4 py-2.5 text-right text-[11px] font-normal text-white duration-300 ease-in`}
+        } relative z-10 my-[5px] flex h-10 w-full items-center justify-between overflow-hidden rounded-[10px] px-4 py-2.5 text-right text-[11px] font-normal text-white transition-all duration-300 ease-in`}
       >
         <span>{QuestionBoxtitle}</span>
         {selected === index ? <BiCaretUp /> : <BiCaretDown />}

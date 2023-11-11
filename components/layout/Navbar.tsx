@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-//import navlist items for maping them
+// import navlist items for maping them
 import { Navlist } from "@/constants/header";
 
 const Navbar = () => {

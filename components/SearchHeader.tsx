@@ -1,7 +1,6 @@
 "use client";
-import { Dispatch, SetStateAction, useState } from "react";
-import { BiSearchAlt2 } from "react-icons/bi";
-import { BiCaretDown } from "react-icons/bi";
+import { Dispatch, SetStateAction } from "react";
+import { BiSearchAlt2, BiCaretDown } from "react-icons/bi";
 
 /**
  * Props interface for the SearchHeader component.
@@ -18,7 +17,7 @@ const SearchHeader = ({ setSearchParams, searchParams }: searchHeaderProps) => {
   return (
     <div className="w-full bg-[#0a0d14] px-0 md:px-8">
       <div className="flex w-full flex-wrap items-center justify-center px-4 py-8 md:flex-nowrap">
-        <article className="m-auto mb-5 w-full px-4 md:m-0  md:mb-0 md:me-12 md:w-2/4 md:p-0">
+        <article className="m-auto mb-5 w-full px-4 md:m-0  md:me-12 md:w-2/4 md:p-0">
           <article className="relative flex w-full items-center justify-between">
             <BiSearchAlt2 className="absolute right-4 h-6 w-6" />
             <input

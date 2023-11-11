@@ -45,8 +45,8 @@
     "components/banners/Banners.tsx",
     "components/banners/Banner.tsx",
     "components/general/QuestionBox.tsx",
-    "components/ShowDetails.jsx",
-    "app/(main)/casts/page.jsx"
+    "components/ShowDetails.tsx",
+    "app/(main)/casts/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

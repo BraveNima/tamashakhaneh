@@ -1,5 +1,16 @@
-//nav data for desktop
-//navbar
+// nav data for desktop
+// navbar
+
+import { PiTelevisionDuotone } from "react-icons/pi";
+import { BsPeople } from "react-icons/bs";
+import {
+  BiHomeAlt2,
+  BiSortZA,
+  BiMoviePlay,
+  BiCameraMovie,
+  BiLogInCircle,
+} from "react-icons/bi";
+import { LuBaby } from "react-icons/lu";
 
 export const Navlist = [
   {
@@ -34,18 +45,7 @@ export const Navlist = [
   },
 ];
 
-import { PiTelevisionDuotone } from "react-icons/pi";
-import { BsPeople } from "react-icons/bs";
-import {
-  BiHomeAlt2,
-  BiSortZA,
-  BiMoviePlay,
-  BiCameraMovie,
-  BiLogInCircle,
-} from "react-icons/bi";
-import { LuBaby } from "react-icons/lu";
-
-///navbar data for the mobile screens with icons
+/// navbar data for the mobile screens with icons
 
 export const NavMobilelist = [
   {

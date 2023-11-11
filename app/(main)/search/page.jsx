@@ -1,4 +1,7 @@
 "use client";
+import { FilterSearch, Movie, SearchHeader } from "@/components";
+import { tmdbOptions } from "@/lib";
+import { useEffect, useState } from "react";
 
 const searchTabs = [
   {
@@ -18,10 +21,6 @@ const searchTabs = [
     title: "عوامل",
   },
 ];
-
-import { FilterSearch, Movie, SearchHeader } from "@/components";
-import { tmdbOptions } from "@/lib";
-import { useEffect, useState } from "react";
 
 const SearchPage = () => {
   const [searchParams, setSearchParams] = useState("");
@@ -178,9 +177,7 @@ const SearchPage = () => {
                     release_date={movie.release_date}
                     id={movie?.id}
                     img={movie.poster_path}
-                    isSeries={
-                      movie?.first_air_date !== undefined ? true : false
-                    }
+                    isSeries={movie?.first_air_date !== undefined}
                   />
                 ))}
                 {series.map((movie) => (
@@ -189,9 +186,7 @@ const SearchPage = () => {
                     title={movie.name}
                     release_date={movie.first_air_date}
                     img={movie.poster_path}
-                    isSeries={
-                      movie?.first_air_date !== undefined ? true : false
-                    }
+                    isSeries={movie?.first_air_date !== undefined}
                     id={movie?.id}
                   />
                 ))}
@@ -201,9 +196,7 @@ const SearchPage = () => {
                     title={movie.title}
                     release_date={movie.release_date}
                     img={movie.poster_path}
-                    isSeries={
-                      movie?.first_air_date !== undefined ? true : false
-                    }
+                    isSeries={movie?.first_air_date !== undefined}
                     id={movie?.id}
                   />
                 ))}
@@ -213,9 +206,7 @@ const SearchPage = () => {
                     title={movie.title}
                     release_date={movie.release_date}
                     img={movie.poster_path}
-                    isSeries={
-                      movie?.first_air_date !== undefined ? true : false
-                    }
+                    isSeries={movie?.first_air_date !== undefined}
                     id={movie?.id}
                   />
                 ))}

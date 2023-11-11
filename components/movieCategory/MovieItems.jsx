@@ -33,7 +33,7 @@ const TrendMoviesList = ({ results }) => {
       dir="rtl"
       navigation={false}
       grabCursor={true}
-      className="mySwiper !px-5"
+      className="swiper !px-5"
     >
       {results.map((item) => (
         <>
@@ -43,7 +43,7 @@ const TrendMoviesList = ({ results }) => {
               release_date={item?.release_date || item?.first_air_date}
               img={item?.poster_path || item?.backdrop_path}
               id={item?.id}
-              isSeries={item?.first_air_date !== undefined ? true : false}
+              isSeries={item?.first_air_date !== undefined}
             />
           </SwiperSlide>
         </>

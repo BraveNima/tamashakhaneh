@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Slider from "./Slider";
-//styles
+// styles
 import "swiper/css";
 import "swiper/css/navigation";
 import { Key } from "react";
@@ -34,7 +34,7 @@ export default function Sliders({ slidersDate }: any) {
                 loop={true}
                 centeredSlides={true}
                 modules={[Autoplay, Navigation]}
-                className="mySwiper"
+                className="swiper"
               >
                 {slidersDate.map(
                   (item: {

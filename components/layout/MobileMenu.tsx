@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { GiHamburgerMenu, GiHomeGarage } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { NavMobilelist } from "@/constants/header";
 
 const MobileMenu = () => {
@@ -14,7 +14,7 @@ const MobileMenu = () => {
           toggleMenu ? "block" : "hidden"
         } fixed right-0 top-0 h-full w-full`}
       >
-        <div className="fixed top-0 z-10 flex h-full w-[235px] translate-x-0 transform flex-col overflow-y-hidden rounded-bl-2xl rounded-tl-2xl bg-[#0a0d148c] px-5 py-[66px] text-white ring-0 backdrop-blur-[5px] ease-in will-change-transform">
+        <div className="fixed top-0 z-10 flex h-full w-[235px] translate-x-0 flex-col overflow-y-hidden rounded-l-2xl bg-[#0a0d148c] px-5 py-[66px] text-white ring-0 backdrop-blur-[5px] ease-in will-change-transform">
           <div className="right-0 mb-12 mr-[-3px] mt-[-34px] flex items-center justify-between">
             <button></button>
           </div>

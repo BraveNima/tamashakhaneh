@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { pakhsh } from "@/public/assets/general";
-import { ExclamationMark } from "@/public/assets/general";
+import { pakhsh, ExclamationMark } from "@/public/assets/general";
 
 type sliderProps = {
   banner: any;
@@ -43,7 +42,7 @@ const Slider = ({
           <Image
             src={miniBanner}
             alt="banner title"
-            className=" z-[999] mb-[-40px] block h-[168px] w-[168px] drop-shadow-sm xs:w-[25rem] md:h-[252px] md:w-[252px] xl:mb-[-50px] xl:mt-[-50px] "
+            className=" z-[999] mb-[-40px] block h-[168px] w-[168px] drop-shadow-sm xs:w-[25rem] md:h-[252px] md:w-[252px] xl:my-[-50px] "
           />
           <div className="flex">
             <h1 className="ml-2.5 block select-text text-[1.3rem] font-normal text-white md:text-2xl md:font-bold">
@@ -57,7 +56,7 @@ const Slider = ({
             <Image
               src={pakhsh}
               alt="پخش اختصاصی"
-              className="ml-2.5object-contain float-right h-[42px] w-[131px]"
+              className="float-right ml-2.5 h-[42px] w-[131px] object-contain"
             />
           </div>
           <p className="z-10 mb-10 min-h-[76px] w-auto whitespace-normal text-justify text-base font-thin text-white xs:w-[unset] xs:whitespace-pre-line xs:text-xl xl:w-[45%] xl:text-base xxl:text-[1.1rem]">
@@ -73,7 +72,7 @@ const Slider = ({
               اطلاعات بیشتر
             </h3>
           </div>
-          <div className="absolute bottom-0 right-0 top-0 grid h-[430px] w-full overflow-hidden  xs:h-full"></div>
+          <div className="absolute inset-y-0 right-0 grid h-[430px] w-full overflow-hidden xs:h-full"></div>
         </div>
       </div>
       <div
@@ -90,7 +89,7 @@ const Slider = ({
           <Image
             src={miniBanner}
             alt="banner title"
-            className=" z-[999] mb-[-40px] block h-[168px] w-[168px] drop-shadow-sm xs:w-[25rem] md:h-[252px] md:w-[252px] xl:mb-[-50px] xl:mt-[-50px] "
+            className=" z-[999] mb-[-40px] block h-[168px] w-[168px] drop-shadow-sm xs:w-[25rem] md:h-[252px] md:w-[252px] xl:my-[-50px] "
           />
           <div className="flex">
             <h1 className="ml-2.5 block select-text text-[1.3rem] font-normal text-white md:text-2xl md:font-bold">
@@ -104,7 +103,7 @@ const Slider = ({
             <Image
               src={pakhsh}
               alt="پخش اختصاصی"
-              className="ml-2.5object-contain float-right h-[42px] w-[131px]"
+              className="float-right ml-2.5 h-[42px] w-[131px] object-contain"
             />
           </div>
           <p className="z-10 mb-10 min-h-[76px] w-auto whitespace-normal text-justify text-base font-thin text-white xs:w-[unset] xs:whitespace-pre-line xs:text-xl xl:w-[45%] xl:text-base xxl:text-[1.1rem]">
@@ -120,7 +119,7 @@ const Slider = ({
               اطلاعات بیشتر
             </h3>
           </div>
-          <div className="absolute bottom-0 right-0 top-0 grid h-[430px] w-full overflow-hidden  xs:h-full"></div>
+          <div className="absolute inset-y-0 right-0 grid h-[430px] w-full overflow-hidden xs:h-full"></div>
         </div>
       </div>
     </Link>

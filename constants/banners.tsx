@@ -1,4 +1,4 @@
-///navlist items
+/// navlist items
 
 import {
   thePopesExorcist,
@@ -11,6 +11,28 @@ import {
   theLastKingdoSevenKingsMustDie,
   tetris,
 } from "../public/assets/banners/banner-group-2";
+
+import {
+  banner1,
+  banner2,
+  banner3,
+  banner4,
+  banner5,
+  banner6,
+  banner7,
+} from "../public/assets/banners/banner-group-1";
+
+import {
+  kingsOfPain,
+  JohnWickChapter4,
+  thisIsus,
+  DesignatedSurvivor,
+  TheNightAgent,
+  YourHonor,
+  Killing,
+} from "../public/assets/banners/banner-group-4";
+
+import breakingBad from "../public/assets/banners/banner-group-8/BreakingBad.jpg";
 
 export const bannerGroup2 = [
   {
@@ -59,16 +81,6 @@ export const bannerGroup2 = [
   },
 ];
 
-import {
-  banner1,
-  banner2,
-  banner3,
-  banner4,
-  banner5,
-  banner6,
-  banner7,
-} from "../public/assets/banners/banner-group-1";
-
 export const bannerGroup1 = [
   {
     movietitle: "بدون تاریخ بدون امضا",
@@ -113,16 +125,6 @@ export const bannerGroup1 = [
     tmdbId: 566164,
   },
 ];
-
-import {
-  kingsOfPain,
-  JohnWickChapter4,
-  thisIsus,
-  DesignatedSurvivor,
-  TheNightAgent,
-  YourHonor,
-  Killing,
-} from "../public/assets/banners/banner-group-4";
 
 export const bannerGroup4 = [
   {
@@ -174,8 +176,6 @@ export const bannerGroup4 = [
     tmdbId: 34415,
   },
 ];
-
-import breakingBad from "../public/assets/banners/banner-group-8/BreakingBad.jpg";
 export const bannerGroup8 = [
   {
     movietitle: "برکینگ بد",

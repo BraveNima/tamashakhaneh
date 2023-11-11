@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 
@@ -32,7 +32,7 @@ const ExclusiveItem = ({
       <Link
         href={"#"}
         className={`absolute ${
-          index == curItem
+          index === curItem
             ? "opacity-100 transition-shadow duration-1000 ease-in "
             : "opacity-0"
         } bottom-5 right-5 z-10 mx-auto ml-4  block h-10 w-32 cursor-pointer rounded-md bg-[#b2a5a529] p-2 text-center text-[1.3rem] font-extrabold text-white no-underline`}

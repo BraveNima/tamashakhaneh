@@ -1,3 +1,7 @@
+/**
+ * errorPage component displays a 404 error page.
+ * It shows a 404 image and text indicating the page is not found.
+ */
 import Image from "next/image";
 import error404 from "../../../public/assets/error/error.png";
 

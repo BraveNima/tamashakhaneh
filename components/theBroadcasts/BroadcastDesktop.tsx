@@ -39,7 +39,7 @@ const Broadcast = ({
       <div className="p-2.5 text-sm text-white">
         {curItem !== index && <div>{broadcastTitle}</div>}
         {curItem !== index && (
-          <div className="transfrom-[unset] relative left-[unset] top-[7vw] flex h-[30px] min-w-[70px] items-center justify-center rounded-bl-[10px] rounded-tl-[10px] bg-[#8a0c17] px-1.5 py-[5px] text-xs lg:absolute lg:right-0 lg:top-[9vw] lg:text-sm">
+          <div className="relative left-[unset] top-[7vw] flex h-[30px] min-w-[70px] items-center justify-center rounded-l-[10px] bg-[#8a0c17] px-1.5 py-[5px] text-xs lg:absolute lg:right-0 lg:top-[9vw] lg:text-sm">
             {day}
           </div>
         )}

@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { pakhsh } from "@/public/assets/general";
-import { ExclamationMark } from "@/public/assets/general";
+import { pakhsh, ExclamationMark } from "@/public/assets/general";
 
 const Slidermovie = ({
   banner,
@@ -68,7 +66,7 @@ const Slidermovie = ({
               اطلاعات بیشتر
             </h3>
           </div>
-          <div className="absolute bottom-0 right-0 top-0 grid h-[430px] w-full overflow-hidden  xs:h-full"></div>
+          <div className="absolute inset-y-0 right-0 grid h-[430px] w-full overflow-hidden xs:h-full"></div>
         </div>
       </div>
     </Link>

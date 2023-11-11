@@ -21,7 +21,7 @@ const MiniBanners = ({ dataItems }: any) => {
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
-          className="mySwiper w-full"
+          className="swiper w-full"
           breakpoints={{
             // when window width is >= 768px
             768: {
@@ -53,5 +53,6 @@ const MiniBanners = ({ dataItems }: any) => {
     </div>
   );
 };
+
 
 export default MiniBanners;

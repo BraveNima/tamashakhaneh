@@ -34,7 +34,7 @@ const loginPage = () => {
                     className="m-0 min-h-[42px] w-full rounded bg-[#37383e] px-4 text-lg leading-[45px] text-white outline-0 transition-all duration-[5000] ease-in-out"
                   />
                 </div>
-                <div className=" visible mt-3 flex h-5 items-center justify-end bg-opacity-10 pr-4 text-sm text-[#f90000]">
+                <div className=" visible mt-3 flex h-5 items-center justify-end pr-4 text-sm text-[#f90000]">
                   <span>فیلد ورودی خالی می باشد</span>
                 </div>
               </div>

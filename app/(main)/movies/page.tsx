@@ -1,4 +1,4 @@
-import { MiniBanner, MiniBanners, MoviesCategory, Slider } from "@/components";
+import { MiniBanners, MoviesCategory } from "@/components";
 import Slidermovies from "../../../components/homeSlider/Slidermovies";
 import { miniBanners1 } from "@/constants/miniBanners";
 import { tmdbOptions } from "@/lib";

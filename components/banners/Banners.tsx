@@ -1,24 +1,20 @@
-/* The code you provided is a TypeScript React component called "Banners". It imports various
-dependencies and components to create a banner slideshow using the Swiper library. */
 "use client";
 import { StaticImageData } from "next/image";
 import { Key } from "react";
 import { Banner } from "..";
 
-//import swiper
+// import swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 
 const Banners = ({ bannersData }: any) => {
   return (
     <article>
-      <section className="relatve mx-[30px] mt-[70px]">
+      <section className="relative mx-[30px] mt-[70px]">
         <Swiper
           effect={"fade"}
           pagination={{
@@ -26,7 +22,7 @@ const Banners = ({ bannersData }: any) => {
             el: "bullet",
           }}
           modules={[Autoplay, EffectFade, Pagination]}
-          className="mySwiper "
+          className="swiper"
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -56,5 +52,6 @@ const Banners = ({ bannersData }: any) => {
     </article>
   );
 };
+
 
 export default Banners;

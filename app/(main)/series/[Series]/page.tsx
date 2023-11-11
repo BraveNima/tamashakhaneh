@@ -1,14 +1,15 @@
 import { tmdbOptions } from "@/lib";
 import ShowDetails from "@/components/ShowDetails";
 
-const SeriesPage = async ({ params }: any) => {
+type seriesPageProps = {
+  params: { Series: string };
+};
+
+const SeriesPage = async ({ params }: seriesPageProps) => {
   const SeriesId = params.Series;
 
   async function getData() {
-    const res = await fetch(
-      `https://api.themoviedb.org/3/tv/${SeriesId}?language=fa`,
-      tmdbOptions,
-    );
+    const res = await fetch(SeriesId, tmdbOptions);
 
     if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary
@@ -20,26 +21,26 @@ const SeriesPage = async ({ params }: any) => {
 
   const result = await getData();
   const {
-    backdrop_path,
+    backdrop_path: backdropPath,
     name,
-    original_name,
-    first_air_date,
+    original_name: originalName,
+    first_air_date: firstAirDate,
     genres,
-    production_countries,
+    production_countries: productionCountries,
     overView,
-    vote_average,
+    vote_average: voteAverage,
   } = result;
 
   return (
     <ShowDetails
-      backgroundImage={backdrop_path}
+      backgroundImage={backdropPath}
       persianTitle={name}
-      englishTitle={original_name}
+      englishTitle={originalName}
       genres={genres}
-      madeIn={production_countries}
-      release={first_air_date}
+      madeIn={productionCountries}
+      release={firstAirDate}
       desc={overView}
-      averageVote={vote_average}
+      averageVote={voteAverage}
       isSeries={true}
     />
   );

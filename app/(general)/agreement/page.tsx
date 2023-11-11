@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { PrivacyQuestion, QuestionBox } from "@/components";
+import { QuestionBox } from "@/components";
 import { agreementsData } from "@/constants/general";
 
 const AgreementPage = () => {

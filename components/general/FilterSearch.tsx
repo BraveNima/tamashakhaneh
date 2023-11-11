@@ -1,40 +1,5 @@
-
-
-const genres = [
-  "اکشن",
-  "ماجراجویی",
-  "کمدی",
-  "جنایی",
-  "درام",
-  "ترسناک",
-  "تاریخی",
-  "انیمیشن",
-  "مستند",
-  "رازآلود",
-  "فانتزی",
-  "موزیکال",
-  "علمی-تخیلی",
-  "جنگی",
-  "وسترن",
-  "ورزشی",
-  "بیوگرافی",
-  "عاشقانه",
-  "خانوادگی",
-  "هیجان انگیز",
-  "فیلم کوتاه",
-  "موزیک",
-  "خبر",
-  "واقع‌نما",
-  "فیلم نوآر",
-  "انیمه",
-  "اجتماعی",
-  "مذهبی",
-  "ترکیبی",
-  "ملودرام",
-  "تاک شو",
-  "آموزشی",
-  "گیم شو",
-];
+import React from "react";
+import { genres } from "@/constants/general";
 
 const Filtersearch = () => {
   return (
@@ -72,7 +37,7 @@ const Filtersearch = () => {
                 >
                   <label
                     htmlFor=""
-                    className="text relative -top-[6px] left-2.5 mb-3 block cursor-pointer select-none pl-[35px]"
+                    className="relative left-2.5 top-[-6px] mb-3 block cursor-pointer select-none pl-[35px]"
                   >
                     <input
                       type="text"

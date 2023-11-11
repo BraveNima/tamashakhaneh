@@ -11,7 +11,7 @@ type DownloadoptionProps = {
 
 const Downloadoption = ({ title, desc }: DownloadoptionProps) => {
   return (
-    <div className="h-[calc(100vh_-_60px)] flex-grow-0 basis-[calc(100%)] border-l border-l-[#ffffff70] bg-[#000000eb] text-white md:basis-[calc(50%)] lg:basis-[calc(25%)]">
+    <div className="h-[calc(100vh_-_60px)] grow-0 basis-[calc(100%)] border-l border-l-[#ffffff70] bg-[#000000eb] text-white md:basis-[calc(50%)] lg:basis-[calc(25%)]">
       <h2 className="my-4 block p-[11%] text-center text-xl font-bold">
         {title}
       </h2>

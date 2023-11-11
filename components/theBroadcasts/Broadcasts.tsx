@@ -5,7 +5,7 @@ import { broadcastInfo } from "@/constants/broadcasts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
-//styles
+// styles
 import "swiper/css";
 import "swiper/css/navigation";
 
