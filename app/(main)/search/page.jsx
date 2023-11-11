@@ -3,25 +3,6 @@ import { FilterSearch, Movie, SearchHeader } from "@/components";
 import { tmdbOptions } from "@/lib";
 import { useEffect, useState } from "react";
 
-const searchTabs = [
-  {
-    id: 1,
-    title: "همه",
-  },
-  {
-    id: 2,
-    title: "فیلم ها",
-  },
-  {
-    id: 3,
-    title: "سریال ها",
-  },
-  {
-    id: 4,
-    title: "عوامل",
-  },
-];
-
 const SearchPage = () => {
   const [searchParams, setSearchParams] = useState("");
   const [searchMovies, setSearchMovies] = useState([]);
@@ -109,9 +90,6 @@ const SearchPage = () => {
         setPeople(data.results);
       });
   };
-
-  const { name, profile_path } = people;
-  const myImg = `https://image.tmdb.org/t/p/original/${profile_path}`;
 
   return (
     <article className="mb-5 mt-20 flex min-h-screen w-screen flex-col items-center justify-start text-white md:mb-0">
@@ -219,6 +197,7 @@ const SearchPage = () => {
                       <img
                         src={`https://image.tmdb.org/t/p/original/${person.profile_path}`}
                         className="m-2 h-[110px] w-[100px] rounded-[30%] md:h-[117px] md:w-[117px]"
+                        alt=""
                       />
                     </div>
                     <div className="block cursor-pointer select-text text-center align-middle text-xs">

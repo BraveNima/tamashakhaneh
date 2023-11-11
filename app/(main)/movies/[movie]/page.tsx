@@ -20,25 +20,25 @@ const moviePage = async ({ params }: any) => {
 
   const {
     title,
-    original_title,
-    backdrop_path,
+    original_title: originalTitle,
+    backdrop_path: backdropPath,
     overview,
     genres,
-    production_countries,
-    release_date,
-    vote_average,
+    production_countries: productionCountries,
+    release_date: releaseDate,
+    vote_average: voteAverage,
   } = result;
 
   return (
     <ShowDetails
-      backgroundImage={backdrop_path}
+      backgroundImage={backdropPath}
       persianTitle={title}
-      englishTitle={original_title}
+      englishTitle={originalTitle}
       genres={genres}
-      madeIn={production_countries}
-      release={release_date}
+      madeIn={productionCountries}
+      release={releaseDate}
       desc={overview}
-      averageVote={vote_average}
+      averageVote={voteAverage}
       isSeries={false}
     />
   );

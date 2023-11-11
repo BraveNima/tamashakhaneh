@@ -13,7 +13,6 @@ const Slidermovie = ({
   tmdbId,
 }) => {
   const myBanner = `https://image.tmdb.org/t/p/original/${banner}`;
-  const posterBanner = `https://image.tmdb.org/t/p/w92/${mobileBanner}`;
 
   return (
     <Link

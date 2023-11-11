@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const TrendMovie = ({ release_date, title, img, id, isSeries }) => {
+const TrendMovie = ({ releaseDate, title, img, id, isSeries }) => {
   const myImg = `https://image.tmdb.org/t/p/w154/${img}`;
 
   return (
@@ -18,7 +17,7 @@ const TrendMovie = ({ release_date, title, img, id, isSeries }) => {
               {title}
             </h4>
             <span className="absolute bottom-1 m-0 font-light">
-              <span>{release_date}</span>
+              <span>{releaseDate}</span>
             </span>
           </div>
         </div>

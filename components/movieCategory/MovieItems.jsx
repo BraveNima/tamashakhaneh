@@ -40,7 +40,7 @@ const TrendMoviesList = ({ results }) => {
           <SwiperSlide key={item.id}>
             <MovieItem
               title={item?.title || item?.name}
-              release_date={item?.release_date || item?.first_air_date}
+              releaseDate={item?.release_date || item?.first_air_date}
               img={item?.poster_path || item?.backdrop_path}
               id={item?.id}
               isSeries={item?.first_air_date !== undefined}

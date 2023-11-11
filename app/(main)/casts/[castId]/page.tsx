@@ -2,8 +2,6 @@ import { tmdbOptions } from "@/lib";
 import { BiBookmark } from "react-icons/bi";
 
 const SeriesPage = async ({ params }: any) => {
-  const SeriesId = params.Series;
-
   async function getData() {
     const res = await fetch(
       `https://api.themoviedb.org/3/person/224513?language=en-US`,
