@@ -15,13 +15,11 @@ import {
   bannerGroup4,
   bannerGroup8,
 } from "@/constants/banners";
-
 import {
   miniBanners1,
   persianActors,
   collections,
 } from "@/constants/miniBanners";
-import { UserButton } from "@clerk/nextjs";
 
 const HomePage = () => {
   return (
@@ -85,7 +83,6 @@ const HomePage = () => {
         apiPath={"/3/tv/top_rated?language=fa&page=1"}
         movieCategoryTitle={"همه سریال‌ها"}
       />
-      <UserButton />
     </main>
   );
 };

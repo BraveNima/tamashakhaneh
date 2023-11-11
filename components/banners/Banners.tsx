@@ -1,3 +1,5 @@
+/* The code you provided is a TypeScript React component called "Banners". It imports various
+dependencies and components to create a banner slideshow using the Swiper library. */
 "use client";
 import { StaticImageData } from "next/image";
 import { Key } from "react";

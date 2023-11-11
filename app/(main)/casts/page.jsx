@@ -3,7 +3,6 @@ import { tmdbOptions } from "@/lib";
 import Link from "next/link";
 import React, { useState } from "react";
 
-
 const CastPage = () => {
   const [people, setPeople] = useState([]);
 

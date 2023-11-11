@@ -1,9 +1,16 @@
 import Link from "next/link";
+/**
+ * Imports Logo, Navbar and MobileMenu components from the current directory.
+ */
 import { Logo, Navbar, MobileMenu } from ".";
 
 //react icons
 import { LiaSearchSolid } from "react-icons/lia";
 import { HiDownload } from "react-icons/hi";
+import { SignedOut, SignedIn, UserButton } from "@clerk/nextjs";
+import { LuAlertCircle } from "react-icons/lu";
+import { SignIn } from "@clerk/clerk-react";
+import { BiSolidBellRing, BiSolidUser } from "react-icons/bi";
 
 const Header = ({ leftNav = true }: { leftNav: boolean }) => {
   return (
@@ -14,19 +21,28 @@ const Header = ({ leftNav = true }: { leftNav: boolean }) => {
         <Navbar />
       </div>
       {leftNav && (
-        <div className="flex w-fit items-center justify-between lg:mt-3">
-          <div className="ml-[8px] flex h-[30px] w-10 cursor-pointer items-center justify-center text-xl">
+        <div className="mt-3 flex w-fit items-center justify-between">
+          <div className="ml-[8px] flex h-[30px] cursor-pointer items-center justify-center gap-7 text-xl">
             <Link href={"/search"}>
               <LiaSearchSolid className="h-[25px] w-[25px] fill-white" />
             </Link>
-          </div>
-          <Link
-            href={"/sign-up"}
-            className="btn-primary 
+            <SignedIn>
+              <div className="flex  gap-3 md:flex md:gap-5">
+                <BiSolidBellRing className="h-6 w-6 fill-white md:h-[25px] md:w-[25px]" />
+                <UserButton afterSignOutUrl="/" />
+              </div>
+            </SignedIn>
+
+            <SignedOut>
+              <Link
+                href={"/sign-up"}
+                className="btn-primary 
             inline-block cursor-pointer py-1.5"
-          >
-            ورود
-          </Link>
+              >
+                ورود
+              </Link>
+            </SignedOut>
+          </div>
           <Link
             href={"/apps"}
             className="btn-primary mr-[5px] flex items-center gap-1 px-[5px] py-[5px] md:mr-2.5 md:px-2.5"

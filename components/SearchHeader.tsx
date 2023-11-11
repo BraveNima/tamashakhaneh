@@ -3,6 +3,12 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BiCaretDown } from "react-icons/bi";
 
+/**
+ * Props interface for the SearchHeader component.
+ *
+ * @param setSearchParams - Dispatch function to update the searchParams state.
+ * @param searchParams - The current search query string.
+ */
 type searchHeaderProps = {
   setSearchParams: Dispatch<SetStateAction<string>>;
   searchParams: string;

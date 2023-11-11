@@ -1,3 +1,5 @@
+/* a configuration file for Tailwind CSS, a popular utility-first CSS
+framework. */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
