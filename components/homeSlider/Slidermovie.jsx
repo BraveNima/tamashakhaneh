@@ -49,7 +49,7 @@ const Slidermovie = ({
             <Image
               src={pakhsh}
               alt="پخش اختصاصی"
-              className="ml-2.5object-contain float-right h-[42px] w-[131px]"
+              className="float-right ml-2.5 h-[42px] w-[131px] object-contain"
             />
           </div>
           <div className="mb-10 min-h-[76px] w-auto whitespace-normal text-justify text-base font-thin text-white xs:w-[unset] xs:whitespace-pre-line xs:text-xl xl:w-[45%] xl:text-base">
