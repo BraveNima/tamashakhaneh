@@ -6,7 +6,7 @@ const TrendMovie = ({ releaseDate, title, img, id, isSeries }) => {
   const myImg = `https://image.tmdb.org/t/p/w154/${img}`;
 
   return (
-    <section className="relative mb-2.5">
+    <section className="relative mb-2.5 h-[319.19]">
       <Link
         href={`${!isSeries ? `/movies/${id}` : `/series/${id}`}`}
         className="relative top-0 cursor-pointer bg-transparent"
