@@ -5,10 +5,6 @@ import Image from "next/image";
 const TrendMovie = ({ releaseDate, title, img, id, isSeries }) => {
   const myImg = `https://image.tmdb.org/t/p/w154/${img}`;
 
-  function getYear(dateString) {
-    return parseInt(dateString.split("-")[0]);
-  }
-
   return (
     <section className="relative mb-2.5">
       <Link
